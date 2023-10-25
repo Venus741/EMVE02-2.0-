@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1 onclick="inicial()" id="h1">EMVE</h1>
+        </div>
+    </header>
+    <section>
+        <div class="folha">
+            
+            <form action="#" method="get" target="_blank" autocomplete="off">
+                <div class="text01">
+                    <h2>CADASTRE-SE</h2>
+                </div>                
+                <div class="dados">
+                    <p id="linha01">
+                        <label for="nome">* Nome:</label>
+                        <input type="text" id="nome" name="primeiro_nome">
+
+                        <label for="sobrenome">* Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="segundo_nome">
+                    </p>
+                    <p id="linha02">
+                        <label for="email">* E-mail:</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p id="linha03">
+                        <label for="cpf">* CPF:</label>
+                        <input type="number" name="cpf" id="cpf">
+
+                        <label for="nascimento">* Data de nascimento:</label>
+                        <input type="date" id="data" name="data">
+                        
+                    </p>
+                    <p id="linha04">
+                        <label for="senha01">* Crie uma senha:</label>
+                        <input type="password" name="senha01" id="senha01">
+                        
+                        <label for="senha02">* Digite a senha novamente:</label>
+                        <input type="password" name="senha02" id="senha02">
+                    </p>
+                    <button id="botao" onclick="concluir()">CONCLUIR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+<script src="../src/cadastro.js"></script>
+</html>
